@@ -131,8 +131,9 @@ Licence URI: http://www.os-templates.com/template-terms
           $name = $_REQUEST['name'];
           $email = $_REQUEST['email'];
           $message = $_REQUEST['message'];
+          $headers = "From: " . $_REQUEST['email'];
           // PHP Mail
-          mail($eclub_email, "$message", $message, "From:" . $name . " via " . $email);
+          mail($eclub_email, "Message from " . $name, $message, $headers);
           // Response
           echo "Thank you for contacting us!";
         }
