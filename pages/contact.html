@@ -133,7 +133,7 @@ Licence URI: http://www.os-templates.com/template-terms
           $message = $_REQUEST['message'];
           // PHP Mail
           mail($eclub_email, "$message", $message, "From:" . $name . " via " . $email);
-          
+          // Response
           echo "Thank you for contacting us!";
         }
         else  { ?>
