@@ -39,7 +39,7 @@ File: Layout CSS
 #pageintro article .heading{margin-bottom:30px; font-size:36px;}
 #pageintro article p:last-of-type{margin-bottom:0;}
 
-
+#download{padding:10px 0; text-align:center;}
 /* Content Area
 --------------------------------------------------------------------------------------------------------------- */
 .container{padding:50px 0;}
@@ -107,9 +107,10 @@ File: Layout CSS
 
 /* Footer
 --------------------------------------------------------------------------------------------------------------- */
-#footer{padding:80px 0;}
+#footer{padding:50px 0;}
 
 #footer .title{margin:0 0 50px 0; padding:0; font-size:1.2rem; text-transform:uppercase;}
+#footer .downtitle{margin:0 0 20px 0; padding:0; font-size:1.2rem; text-transform:uppercase;}
 
 #footer .linklist li{display:block; margin-bottom:15px; padding:0 0 15px 0; border-bottom:1px solid;}
 #footer .linklist li:last-child{margin:0; padding:0; border:none;}
@@ -232,7 +233,7 @@ td{border-width:0 1px;}
 
 /* Colours
 --------------------------------------------------------------------------------------------------------------- */
-body{color:#888888; background-color:#FFFFFF;}
+body{color:#121212; background-color:#FFFFFF;}
 a{color:#82A800;}
 a:active, a:focus{background:transparent;}/* IE10 + 11 Bugfix - prevents grey background */
 hr, .borderedbox{border-color:#D7D7D7;}
@@ -248,9 +249,9 @@ input:focus, textarea:focus, *:required:focus{border-color:#82A800;}
 /* Rows */
 .row1, .row1 a{}
 .row2, .row2 a{color:#FFFFFF; background-color:transparent;}
-.row3{color:#888888; background-color:#FFFFFF;}
+.row3{color:#121212; background-color:#FFFFFF;}
 .row4{color:#888888; background-color:#1F1F1F;}
-.row5, .row5 a{color:#888888; background-color:#FFFFFF;}
+.row5, .row5 a{color:#121212; background-color:#FFFFFF;}
 
 .coloured{color:#FFFFFF; background-color:#82A800;}
 
@@ -279,6 +280,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#82A800;}
 
 /* Footer */
 #footer .title{color:#FFFFFF;}
+#footer .downtitle{color:#FFFFFF;}
 #footer .linklist li{border-color:#2E2E2E;}
 #footer input, #footer button{border-color:transparent;}
 #footer input{color:#FFFFFF; background-color:#2E2E2E;}
