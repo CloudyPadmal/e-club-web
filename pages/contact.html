@@ -125,28 +125,41 @@ Licence URI: http://www.os-templates.com/template-terms
     </div>
     <div class="content"> 
       <!-- ################################################################################################ -->
-      <div id="comments">
-        <h2>Send us a message</h2>
-        <form action="#" method="post">
-          <div class="one_half first">
-            <label for="name">Name <span>*</span></label>
-            <input type="text" name="name" id="name" value="" size="22" required>
-          </div>
-          <div class="one_half">
-            <label for="email">Mail <span>*</span></label>
-            <input type="email" name="email" id="email" value="" size="22" required>
-          </div>
-          <div class="block clear">
-            <label for="comment">Your Message <span>*</span></label>
-            <textarea name="comment" id="comment" cols="25" rows="10" required></textarea>
-          </div>
-          <div>
-            <input type="submit" name="submit" value="Send message">
-            &nbsp;
-            <input type="reset" name="reset" value="Reset">
-          </div>
-        </form>        
-      </div>
+      <?php
+        if (isset($_REQUEST['email']))  {
+          $eclub_email = "blog.padmal@gmail.com";
+          $name = $_REQUEST['name'];
+          $email = $_REQUEST['email'];
+          $message = $_REQUEST['message'];
+          // PHP Mail
+          mail($eclub_email, "$message", $message, "From:" . $name . " via " . $email);
+          
+          echo "Thank you for contacting us!";
+        }
+        else  { ?>
+          <div id="comments">
+            <h2>Send us a message</h2>
+            <form method="post">
+              <div class="one_half first">
+                <label for="name">Name <span>*</span></label>
+                <input type="text" name="name" id="name" value="" size="22" required>
+              </div>
+              <div class="one_half">
+                <label for="email">Mail <span>*</span></label>
+                <input type="email" name="email" id="email" value="" size="22" required>
+              </div>
+              <div class="block clear">
+                <label for="message">Your Message <span>*</span></label>
+                <textarea name="message" id="message" cols="25" rows="10" required></textarea>
+              </div>
+              <div>
+                <input type="submit" name="submit" value="Send message">
+                &nbsp;
+                <input type="reset" name="reset" value="Reset">
+              </div>
+            </form>        
+          </div>        
+        <?php } ?>
     </div>
     <!-- ################################################################################################ -->
     <!-- / main body -->
