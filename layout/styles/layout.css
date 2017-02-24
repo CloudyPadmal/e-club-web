@@ -22,7 +22,7 @@ File: Layout CSS
 
 /* Header
 --------------------------------------------------------------------------------------------------------------- */
-#header{padding:50px 0;}
+#header{padding:40px 0px 60px 0px;}
 
 #header #logo{text-align:center;}
 #header #logo *{margin:0; padding:0; line-height:1;}
