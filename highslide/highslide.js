@@ -32,7 +32,7 @@ zIndexCounter : 1001, // adjust to other absolutely positioned elements
 loadingOpacity : 0.75,
 allowMultipleInstances: true,
 numberOfImagesToPreload : 5,
-outlineWhileAnimating : 2, // 0 = never, 1 = always, 2 = HTML only 
+outlineWhileAnimating : 0, // 0 = never, 1 = always, 2 = HTML only 
 outlineStartOffset : 3, // ends at 10
 padToMinWidth : false, // pad the popup width to make room for wide caption
 fullExpandPosition : 'bottom right',
@@ -47,7 +47,7 @@ dragByHeading: true,
 minWidth: 200,
 minHeight: 200,
 allowSizeReduction: true, // allow the image to reduce to fit client size. If false, this overrides minWidth and minHeight
-outlineType : 'drop-shadow', // set null to disable outlines
+outlineType : null, // set null to disable outlines
 // END OF YOUR SETTINGS
 
 
