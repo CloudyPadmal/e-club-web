@@ -163,8 +163,10 @@ File: Layout CSS
 nav ul, nav ol{margin:0; padding:0; list-style:none;}
 
 #mainav, #breadcrumb, .sidebar nav{line-height:normal;}
+#mainav, #breadcrumb_morahack, .sidebar nav{line-height:normal;}
 #mainav, #cbreadcrumb, .sidebar nav{line-height:normal;}
 #mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"FontAwesome"; font-size:10px; line-height:10px;}
+#mainav .drop::after, #mainav li li .drop::after, #breadcrumb_morahack li a::after, .sidebar nav a::after{position:absolute; font-family:"FontAwesome"; font-size:10px; line-height:10px;}
 #mainav .drop::after, #mainav li li .drop::after, #cbreadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"FontAwesome"; font-size:10px; line-height:10px;}
 
 /* Top Navigation */
@@ -198,6 +200,14 @@ nav ul, nav ol{margin:0; padding:0; list-style:none;}
 #breadcrumb li a::after{top:5px; right:0; content:"\f101";}
 #breadcrumb li:last-child a{margin:0; padding:0;}
 #breadcrumb li:last-child a::after{display:none;}
+
+#breadcrumb_morahack{padding:50px 0 20px;}
+#breadcrumb_morahack ul{margin:0; padding:0; list-style:none;}
+#breadcrumb_morahack li{display:inline-block; margin:0 6px 0 0; padding:0;}
+#breadcrumb_morahack li a{display:block; position:relative; margin:0; padding:0 12px 0 0; font-size:12px;}
+#breadcrumb_morahack li a::after{top:5px; right:0; content:"\f101";}
+#breadcrumb_morahack li:last-child a{margin:0; padding:0;}
+#breadcrumb_morahack li:last-child a::after{display:none;}
 
 #cbreadcrumb{padding:50px 0 20px;}
 #cbreadcrumb ul{margin:0; padding:0; list-style:none;}
@@ -324,6 +334,9 @@ input:focus, textarea:focus, *:required:focus{border-color:#82A800;}
 #breadcrumb a{color:inherit; background-color:inherit;}
 #breadcrumb li:last-child a{color:#BAE000;}
 
+#breadcrumb_morahack a{color:red; background-color:inherit;}
+#breadcrumb_morahack li:last-child a{color:#BAE000;}
+
 #cbreadcrumb a{color:inherit; background-color:inherit;}
 #cbreadcrumb li:last-child a{color:#000000;}
 
@@ -376,6 +389,7 @@ table a, #comments a{background-color:inherit;}
 	#mainav form{display:block;}
 
 	#breadcrumb{}
+	#breadcrumb_morahack{}
 	#cbreadcrumb{}
 
 	.container{}
