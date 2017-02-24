@@ -334,7 +334,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#82A800;}
 #breadcrumb a{color:inherit; background-color:inherit;}
 #breadcrumb li:last-child a{color:#BAE000;}
 
-#breadcrumb_morahack a{color:red; background-color:inherit;}
+#breadcrumb_morahack a{color:white; background-color:inherit;}
 #breadcrumb_morahack li:last-child a{color:#BAE000;}
 
 #cbreadcrumb a{color:inherit; background-color:inherit;}
