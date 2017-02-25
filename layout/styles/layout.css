@@ -18,6 +18,7 @@ File: Layout CSS
 .row3, .row3 a{}
 .row4, .row4 a{}
 .row5, .row5 a{}
+.row6, .row6 a{}
 
 
 /* Header
@@ -284,6 +285,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#44AAE0;} /* Old Colo
 .row3{color:#121212; background-color:#FFFFFF;}
 .row4{color:#888888; background-color:#1F1F1F;}
 .row5, .row5 a{color:#121212; background-color:#FFFFFF;}
+.row6{color:#121212; background-color:#698DA9;}
 
 .coloured{color:#FFFFFF; background-color:#44AAE0;} /* Old Color 82A800 */
 
@@ -310,8 +312,10 @@ input:focus, textarea:focus, *:required:focus{border-color:#44AAE0;} /* Old Colo
 #testimonials li div:hover{color:#FFFFFF; background-color:#44AAE0;} /* Old Color 82A800 */
 
 /* Committees */
-#committees li div{color:#000000; background-color:rgba(255,255,255,.75);}
+#committees li div{color:#0C0C0C; background-color:#4488BB;}
 #committees li div:hover{color:#FFFFFF; background-color:#205588;}
+
+#committee_div {background-color: black;}
 
 /* Footer */
 #footer .title{color:#FFFFFF;}
