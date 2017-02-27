@@ -22,8 +22,8 @@ lang : {
 graphicsDir : 'highslide/graphics/',
 expandCursor : 'zoomin.cur', // null disables
 restoreCursor : 'zoomout.cur', // null disables
-expandDuration : 250, // milliseconds
-restoreDuration : 250,
+expandDuration : 1, // milliseconds
+restoreDuration : 10,
 marginLeft : 15,
 marginRight : 15,
 marginTop : 15,
