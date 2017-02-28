@@ -312,8 +312,8 @@ input:focus, textarea:focus, *:required:focus{border-color:#44AAE0;} /* Old Colo
 #testimonials li div:hover{color:#FFFFFF; background-color:#44AAE0;} /* Old Color 82A800 */
 
 /* Committees */
-#committees li div{color:#0C0C0C; background-color:#4488BB;}
-#committees li div:hover{color:#FFFFFF; background-color:#205588;}
+#committees li div{color:white; background-color:#205588;}
+#committees li div:hover{color:#205588; background-color:white;}
 
 #committee_div {background-color: black;}
 
