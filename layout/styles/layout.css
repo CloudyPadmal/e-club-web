@@ -101,7 +101,7 @@ File: Layout CSS
 #committees{}
 #committees li{}
 #committees li:last-child{margin-bottom:0;}
-#committees li div{position:relative; min-height:120px; padding:20px 20px 20px 120px; border-radius:0 35px;}
+#committees li div{position:relative; min-height:120px; padding:20px 20px 20px 120px; border-radius:0 35px; border-style: solid; border-width: 1px;}
 #committees li img{position:absolute; left:20px;}
 #committees li span{margin-bottom:5px;}
 #committees li span strong{margin-bottom:5px;}
@@ -285,7 +285,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#44AAE0;} /* Old Colo
 .row3{color:#121212; background-color:#FFFFFF;}
 .row4{color:#888888; background-color:#1F1F1F;}
 .row5, .row5 a{color:#121212; background-color:#FFFFFF;}
-.row6{color:#121212; background-color:#698DA9;}
+.row6{color:#121212;}
 
 .coloured{color:#FFFFFF; background-color:#44AAE0;} /* Old Color 82A800 */
 
