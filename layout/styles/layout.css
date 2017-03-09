@@ -51,6 +51,8 @@ File: Layout CSS
 .blocks li{padding:50px 0; text-align:center;}
 .blocks li .btn{margin-bottom:30px;}
 
+.contact-head {font-size: medium;}
+
 /* Elements */
 .elements li:last-child{margin-bottom:0;}/* Used for mobile devices when elements stack */
 .elements article{display:inline-block; width:100%; max-width:320px; height:100%;}
