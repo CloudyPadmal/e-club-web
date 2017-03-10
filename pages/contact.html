@@ -218,7 +218,7 @@ Licence URI: http://www.os-templates.com/template-terms
           // PHP Mail
           mail($eclub_email, "Message from " . $name, $message, $headers);
           // Response
-          echo "Thank you for contacting us!";
+          echo 'Thank you for contacting us! Proceed to ' . '<a href="/index.html">' . 'main page!' . '</a>';
         }
         else  { ?>
           <div id="comments">
